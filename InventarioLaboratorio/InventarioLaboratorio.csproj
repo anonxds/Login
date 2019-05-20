@@ -126,7 +126,12 @@
     <Compile Include="ModificarReactivo.Designer.cs">
       <DependentUpon>ModificarReactivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patron\Congelado.cs" />
     <Compile Include="Patron\Cultivo.cs" />
+    <Compile Include="Patron\Freactivo.cs" />
+    <Compile Include="Patron\Reactivo.cs" />
+    <Compile Include="Patron\ReactivoFabrica.cs" />
+    <Compile Include="Patron\Refrigerador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reactivo.cs" />

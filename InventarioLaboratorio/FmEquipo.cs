@@ -112,5 +112,10 @@ namespace InventarioLaboratorio
         {
 
         }
+
+        private void txtBscNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

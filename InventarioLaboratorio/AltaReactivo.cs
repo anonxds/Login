@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InventarioLaboratorio.Patron;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,11 +44,17 @@ namespace InventarioLaboratorio
             Limpiar limpiar = new Limpiar();
             limpiar.BorrarCampos(this);
         }
+   
 
         //Agregar datos
         private void btnAgregarRc_Click(object sender, EventArgs e)
         {
+            //   var factory = new Cultivo().
+            
             //Se crea objeto
+          
+
+
             Reactivo r = new Reactivo();
 
             r.Nombre = txtReacNom.Text;
@@ -58,9 +65,34 @@ namespace InventarioLaboratorio
             r.Catalogo = txtReacCat.Text;
             r.Unidad = txtReacUni.Text;
             r.Observacion = txtReacObs.Text;
-           
 
-            int Agr = ReactivoDB.AgregarReactivo(r);
+
+
+            //Patron fabrica
+            ReactivoFabrica fac = null;
+
+            switch (r.Clasificacion)
+            {
+                case "Medio de cultivo":
+                       fac = new FCultivo(r.Nombre,r.Numero,r.Clasificacion,r.Laboratorio,r.Caducidad,r.Catalogo,r.Unidad,r.Observacion);
+                    break;
+                case "Reactivo Congelador":
+                    fac = new FCongelador(r.Nombre, r.Numero, r.Clasificacion, r.Laboratorio, r.Caducidad, r.Catalogo, r.Unidad, r.Observacion);
+
+                    break;
+                case "Reactivo Refrigerador":
+                    fac = new FRefrigerador(r.Nombre, r.Numero, r.Clasificacion, r.Laboratorio, r.Caducidad, r.Catalogo, r.Unidad, r.Observacion);
+
+                    break;
+            }
+            Sql s = new Sql();
+            ReactivoInfo rec = fac.GetReactivo();
+            string query = string.Format("Insert Into Reactivo(Nombre, Numero, Clasificacion, Laboratorio, Caducidad, Catalogo, Unidad, Observaciones) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",rec.Nombre,rec.Numero,rec.Clasificacion,rec.Laboratorio,rec.Caducidad,rec.Catalogo,rec.Unidad,rec.Observacion);
+            s.Exe(query);
+
+
+            //Patron fabrica
+            int Agr = 2;//ReactivoDB.AgregarReactivo(r);
 
             if (Agr > 0)
             {

@@ -75,7 +75,7 @@
             this.dgvEquipo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -83,12 +83,13 @@
             this.dgvEquipo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEquipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquipo.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvEquipo.Location = new System.Drawing.Point(20, 240);
+            this.dgvEquipo.Location = new System.Drawing.Point(30, 369);
+            this.dgvEquipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvEquipo.Name = "dgvEquipo";
             this.dgvEquipo.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -96,12 +97,12 @@
             this.dgvEquipo.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvEquipo.RowHeadersVisible = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.dgvEquipo.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEquipo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEquipo.Size = new System.Drawing.Size(1150, 400);
+            this.dgvEquipo.Size = new System.Drawing.Size(1725, 615);
             this.dgvEquipo.TabIndex = 34;
             this.dgvEquipo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEquipo_CellContentClick);
             // 
@@ -113,9 +114,10 @@
             this.lstEstado.Items.AddRange(new object[] {
             "Activo",
             "Baja"});
-            this.lstEstado.Location = new System.Drawing.Point(116, 113);
+            this.lstEstado.Location = new System.Drawing.Point(174, 174);
+            this.lstEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstEstado.Name = "lstEstado";
-            this.lstEstado.Size = new System.Drawing.Size(180, 31);
+            this.lstEstado.Size = new System.Drawing.Size(268, 45);
             this.lstEstado.TabIndex = 33;
             // 
             // lstLaboratorio
@@ -128,18 +130,20 @@
             "Laboratorio 2",
             "Laboratorio 3",
             "Laboratorio 4"});
-            this.lstLaboratorio.Location = new System.Drawing.Point(116, 67);
+            this.lstLaboratorio.Location = new System.Drawing.Point(174, 103);
+            this.lstLaboratorio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstLaboratorio.Name = "lstLaboratorio";
-            this.lstLaboratorio.Size = new System.Drawing.Size(180, 31);
+            this.lstLaboratorio.Size = new System.Drawing.Size(268, 45);
             this.lstLaboratorio.TabIndex = 32;
             // 
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuscar.Location = new System.Drawing.Point(302, 67);
+            this.btnBuscar.Location = new System.Drawing.Point(453, 103);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(120, 35);
+            this.btnBuscar.Size = new System.Drawing.Size(180, 54);
             this.btnBuscar.TabIndex = 30;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -150,9 +154,10 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(12, 119);
+            this.lblEstado.Location = new System.Drawing.Point(18, 183);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(66, 23);
+            this.lblEstado.Size = new System.Drawing.Size(103, 37);
             this.lblEstado.TabIndex = 29;
             this.lblEstado.Text = "Estado";
             // 
@@ -161,9 +166,10 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(543, 23);
+            this.lblTitulo.Location = new System.Drawing.Point(814, 35);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(87, 30);
+            this.lblTitulo.Size = new System.Drawing.Size(130, 45);
             this.lblTitulo.TabIndex = 27;
             this.lblTitulo.Text = "Equipo";
             // 
@@ -172,9 +178,10 @@
             this.lblLaboratorio.AutoSize = true;
             this.lblLaboratorio.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLaboratorio.ForeColor = System.Drawing.Color.White;
-            this.lblLaboratorio.Location = new System.Drawing.Point(12, 70);
+            this.lblLaboratorio.Location = new System.Drawing.Point(18, 108);
+            this.lblLaboratorio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLaboratorio.Name = "lblLaboratorio";
-            this.lblLaboratorio.Size = new System.Drawing.Size(98, 23);
+            this.lblLaboratorio.Size = new System.Drawing.Size(148, 37);
             this.lblLaboratorio.TabIndex = 35;
             this.lblLaboratorio.Text = "Ubicación:";
             // 
@@ -182,9 +189,10 @@
             // 
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnVolver.Location = new System.Drawing.Point(1041, 110);
+            this.btnVolver.Location = new System.Drawing.Point(1562, 169);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(120, 35);
+            this.btnVolver.Size = new System.Drawing.Size(180, 54);
             this.btnVolver.TabIndex = 36;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -194,9 +202,10 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(663, 109);
+            this.button1.Location = new System.Drawing.Point(994, 168);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 35);
+            this.button1.Size = new System.Drawing.Size(180, 54);
             this.button1.TabIndex = 37;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
@@ -207,9 +216,10 @@
             this.btnExportar.Enabled = false;
             this.btnExportar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnExportar.Location = new System.Drawing.Point(916, 109);
+            this.btnExportar.Location = new System.Drawing.Point(1374, 168);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(120, 35);
+            this.btnExportar.Size = new System.Drawing.Size(180, 54);
             this.btnExportar.TabIndex = 41;
             this.btnExportar.Text = "Exportar";
             this.btnExportar.UseVisualStyleBackColor = true;
@@ -219,9 +229,10 @@
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnEditar.Location = new System.Drawing.Point(789, 110);
+            this.btnEditar.Location = new System.Drawing.Point(1184, 169);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(120, 35);
+            this.btnEditar.Size = new System.Drawing.Size(180, 54);
             this.btnEditar.TabIndex = 42;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -232,9 +243,10 @@
             this.lblCerrarSesion.AutoSize = true;
             this.lblCerrarSesion.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.lblCerrarSesion.Location = new System.Drawing.Point(1040, 30);
+            this.lblCerrarSesion.Location = new System.Drawing.Point(1560, 46);
+            this.lblCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCerrarSesion.Name = "lblCerrarSesion";
-            this.lblCerrarSesion.Size = new System.Drawing.Size(121, 23);
+            this.lblCerrarSesion.Size = new System.Drawing.Size(182, 37);
             this.lblCerrarSesion.TabIndex = 43;
             this.lblCerrarSesion.Text = "Cerrar sesion";
             this.lblCerrarSesion.Click += new System.EventHandler(this.lblCerrarSesion_Click);
@@ -243,9 +255,10 @@
             // 
             this.txtEstado.Enabled = false;
             this.txtEstado.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstado.Location = new System.Drawing.Point(1043, 64);
+            this.txtEstado.Location = new System.Drawing.Point(1564, 98);
+            this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(120, 32);
+            this.txtEstado.Size = new System.Drawing.Size(178, 44);
             this.txtEstado.TabIndex = 85;
             // 
             // lblExixtencia
@@ -253,29 +266,33 @@
             this.lblExixtencia.AutoSize = true;
             this.lblExixtencia.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExixtencia.ForeColor = System.Drawing.Color.White;
-            this.lblExixtencia.Location = new System.Drawing.Point(913, 67);
+            this.lblExixtencia.Location = new System.Drawing.Point(1370, 103);
+            this.lblExixtencia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblExixtencia.Name = "lblExixtencia";
-            this.lblExixtencia.Size = new System.Drawing.Size(123, 23);
+            this.lblExixtencia.Size = new System.Drawing.Size(185, 37);
             this.lblExixtencia.TabIndex = 84;
             this.lblExixtencia.Text = "En existencia:";
             // 
             // txtBscNom
             // 
             this.txtBscNom.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBscNom.Location = new System.Drawing.Point(20, 202);
+            this.txtBscNom.Location = new System.Drawing.Point(30, 311);
+            this.txtBscNom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBscNom.Name = "txtBscNom";
-            this.txtBscNom.Size = new System.Drawing.Size(135, 27);
+            this.txtBscNom.Size = new System.Drawing.Size(200, 36);
             this.txtBscNom.TabIndex = 86;
             this.txtBscNom.Visible = false;
+            this.txtBscNom.TextChanged += new System.EventHandler(this.txtBscNom_TextChanged);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(21, 176);
+            this.lblNombre.Location = new System.Drawing.Point(32, 271);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(71, 21);
+            this.lblNombre.Size = new System.Drawing.Size(106, 30);
             this.lblNombre.TabIndex = 87;
             this.lblNombre.Text = "Nombre:";
             this.lblNombre.Visible = false;
@@ -285,9 +302,10 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.Color.White;
-            this.lblMarca.Location = new System.Drawing.Point(157, 178);
+            this.lblMarca.Location = new System.Drawing.Point(236, 274);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(56, 21);
+            this.lblMarca.Size = new System.Drawing.Size(83, 30);
             this.lblMarca.TabIndex = 89;
             this.lblMarca.Text = "Marca:";
             this.lblMarca.Visible = false;
@@ -295,9 +313,10 @@
             // txtBscrMarca
             // 
             this.txtBscrMarca.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBscrMarca.Location = new System.Drawing.Point(161, 202);
+            this.txtBscrMarca.Location = new System.Drawing.Point(242, 311);
+            this.txtBscrMarca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBscrMarca.Name = "txtBscrMarca";
-            this.txtBscrMarca.Size = new System.Drawing.Size(135, 27);
+            this.txtBscrMarca.Size = new System.Drawing.Size(200, 36);
             this.txtBscrMarca.TabIndex = 88;
             this.txtBscrMarca.Visible = false;
             // 
@@ -306,9 +325,10 @@
             this.lblModelo.AutoSize = true;
             this.lblModelo.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModelo.ForeColor = System.Drawing.Color.White;
-            this.lblModelo.Location = new System.Drawing.Point(298, 178);
+            this.lblModelo.Location = new System.Drawing.Point(447, 274);
+            this.lblModelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(66, 21);
+            this.lblModelo.Size = new System.Drawing.Size(101, 30);
             this.lblModelo.TabIndex = 91;
             this.lblModelo.Text = "Modelo:";
             this.lblModelo.Visible = false;
@@ -316,9 +336,10 @@
             // txtBscrModelo
             // 
             this.txtBscrModelo.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBscrModelo.Location = new System.Drawing.Point(302, 202);
+            this.txtBscrModelo.Location = new System.Drawing.Point(453, 311);
+            this.txtBscrModelo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBscrModelo.Name = "txtBscrModelo";
-            this.txtBscrModelo.Size = new System.Drawing.Size(135, 27);
+            this.txtBscrModelo.Size = new System.Drawing.Size(200, 36);
             this.txtBscrModelo.TabIndex = 90;
             this.txtBscrModelo.Visible = false;
             // 
@@ -327,9 +348,10 @@
             this.lblObservacion.AutoSize = true;
             this.lblObservacion.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblObservacion.ForeColor = System.Drawing.Color.White;
-            this.lblObservacion.Location = new System.Drawing.Point(1003, 176);
+            this.lblObservacion.Location = new System.Drawing.Point(1504, 271);
+            this.lblObservacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblObservacion.Name = "lblObservacion";
-            this.lblObservacion.Size = new System.Drawing.Size(100, 21);
+            this.lblObservacion.Size = new System.Drawing.Size(150, 30);
             this.lblObservacion.TabIndex = 93;
             this.lblObservacion.Text = "Observacion:";
             this.lblObservacion.Visible = false;
@@ -337,9 +359,10 @@
             // txtBscObserv
             // 
             this.txtBscObserv.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBscObserv.Location = new System.Drawing.Point(1007, 202);
+            this.txtBscObserv.Location = new System.Drawing.Point(1510, 311);
+            this.txtBscObserv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBscObserv.Name = "txtBscObserv";
-            this.txtBscObserv.Size = new System.Drawing.Size(160, 27);
+            this.txtBscObserv.Size = new System.Drawing.Size(238, 36);
             this.txtBscObserv.TabIndex = 92;
             this.txtBscObserv.Visible = false;
             // 
@@ -348,9 +371,10 @@
             this.lblInvITT.AutoSize = true;
             this.lblInvITT.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInvITT.ForeColor = System.Drawing.Color.White;
-            this.lblInvITT.Location = new System.Drawing.Point(439, 178);
+            this.lblInvITT.Location = new System.Drawing.Point(658, 274);
+            this.lblInvITT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInvITT.Name = "lblInvITT";
-            this.lblInvITT.Size = new System.Drawing.Size(86, 21);
+            this.lblInvITT.Size = new System.Drawing.Size(133, 30);
             this.lblInvITT.TabIndex = 97;
             this.lblInvITT.Text = "No. Inv ITT:";
             this.lblInvITT.Visible = false;
@@ -358,9 +382,10 @@
             // txtInvITT
             // 
             this.txtInvITT.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInvITT.Location = new System.Drawing.Point(443, 202);
+            this.txtInvITT.Location = new System.Drawing.Point(664, 311);
+            this.txtInvITT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInvITT.Name = "txtInvITT";
-            this.txtInvITT.Size = new System.Drawing.Size(135, 27);
+            this.txtInvITT.Size = new System.Drawing.Size(200, 36);
             this.txtInvITT.TabIndex = 96;
             this.txtInvITT.Visible = false;
             // 
@@ -369,9 +394,10 @@
             this.lblInvSEP.AutoSize = true;
             this.lblInvSEP.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInvSEP.ForeColor = System.Drawing.Color.White;
-            this.lblInvSEP.Location = new System.Drawing.Point(580, 178);
+            this.lblInvSEP.Location = new System.Drawing.Point(870, 274);
+            this.lblInvSEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInvSEP.Name = "lblInvSEP";
-            this.lblInvSEP.Size = new System.Drawing.Size(92, 21);
+            this.lblInvSEP.Size = new System.Drawing.Size(139, 30);
             this.lblInvSEP.TabIndex = 99;
             this.lblInvSEP.Text = "No. Inv SEP:";
             this.lblInvSEP.Visible = false;
@@ -379,9 +405,10 @@
             // txtInvSEP
             // 
             this.txtInvSEP.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInvSEP.Location = new System.Drawing.Point(584, 202);
+            this.txtInvSEP.Location = new System.Drawing.Point(876, 311);
+            this.txtInvSEP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInvSEP.Name = "txtInvSEP";
-            this.txtInvSEP.Size = new System.Drawing.Size(135, 27);
+            this.txtInvSEP.Size = new System.Drawing.Size(200, 36);
             this.txtInvSEP.TabIndex = 98;
             this.txtInvSEP.Visible = false;
             // 
@@ -390,9 +417,10 @@
             this.lblBscOP.AutoSize = true;
             this.lblBscOP.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBscOP.ForeColor = System.Drawing.Color.White;
-            this.lblBscOP.Location = new System.Drawing.Point(721, 178);
+            this.lblBscOP.Location = new System.Drawing.Point(1082, 274);
+            this.lblBscOP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBscOP.Name = "lblBscOP";
-            this.lblBscOP.Size = new System.Drawing.Size(87, 21);
+            this.lblBscOP.Size = new System.Drawing.Size(133, 30);
             this.lblBscOP.TabIndex = 101;
             this.lblBscOP.Text = "Manual op:";
             this.lblBscOP.Visible = false;
@@ -400,9 +428,10 @@
             // txtBscManual
             // 
             this.txtBscManual.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBscManual.Location = new System.Drawing.Point(725, 202);
+            this.txtBscManual.Location = new System.Drawing.Point(1088, 311);
+            this.txtBscManual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBscManual.Name = "txtBscManual";
-            this.txtBscManual.Size = new System.Drawing.Size(135, 27);
+            this.txtBscManual.Size = new System.Drawing.Size(200, 36);
             this.txtBscManual.TabIndex = 100;
             this.txtBscManual.Visible = false;
             // 
@@ -411,9 +440,10 @@
             this.lblBscSerie.AutoSize = true;
             this.lblBscSerie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBscSerie.ForeColor = System.Drawing.Color.White;
-            this.lblBscSerie.Location = new System.Drawing.Point(862, 178);
+            this.lblBscSerie.Location = new System.Drawing.Point(1293, 274);
+            this.lblBscSerie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBscSerie.Name = "lblBscSerie";
-            this.lblBscSerie.Size = new System.Drawing.Size(90, 21);
+            this.lblBscSerie.Size = new System.Drawing.Size(136, 30);
             this.lblBscSerie.TabIndex = 103;
             this.lblBscSerie.Text = "Num. Serie:";
             this.lblBscSerie.Visible = false;
@@ -421,20 +451,21 @@
             // txtSerie
             // 
             this.txtSerie.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSerie.Location = new System.Drawing.Point(866, 202);
+            this.txtSerie.Location = new System.Drawing.Point(1299, 311);
+            this.txtSerie.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSerie.Name = "txtSerie";
-            this.txtSerie.Size = new System.Drawing.Size(135, 27);
+            this.txtSerie.Size = new System.Drawing.Size(200, 36);
             this.txtSerie.TabIndex = 102;
             this.txtSerie.Visible = false;
             // 
             // FmEquipo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.ClientSize = new System.Drawing.Size(1776, 1017);
             this.Controls.Add(this.lblBscSerie);
             this.Controls.Add(this.txtSerie);
             this.Controls.Add(this.lblBscOP);
@@ -468,6 +499,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FmEquipo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control de Activo Fijo";
